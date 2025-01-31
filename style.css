@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    height: 120vh;
+    width: 100%;
+    background: linear-gradient(45deg, #ff2626, #fde10d);
+}
+
+.snakeImg{
+    position: absolute;
+    bottom: -30px;
+    right: -80px;
+  
+    object-fit: cover;
+    height: 400px;
+    width: 400px;
+}
+
+.box{
+    width: 90vmin;
+    height: 92vmin;
+    margin-top: 10px;
+    background: #FDDC9F;
+    border-radius: 6px;
+    display: grid;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+
+.head{
+    background-image: url("cobra.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+
+.snake{
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.food{
+    background-image: url("apple.png");
+    background-size: cover;
+    width: 50px;
+    height: 50px;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 15px;
+    left: 200px;
+    font-size: 29px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 55px;
+    left: 200px;
+    font-size: 29px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
